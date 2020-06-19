@@ -1,0 +1,18 @@
+# DO NOT TOUCH! Will be generated automatically!
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: gcloud
+  args:
+    - functions
+    - deploy
+    - ${packageName}
+    - --source=/workspace/
+    - --trigger-http
+    - --runtime 
+    - ${runtime}
+    - --region
+    - ${region}
+    - --allow-unauthenticated
+    - --memory
+    - ${memory}
+  

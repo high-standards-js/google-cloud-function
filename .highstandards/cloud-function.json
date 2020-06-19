@@ -1,0 +1,5 @@
+{
+    "memory": "128MB",
+    "region": "europe-west1",
+    "runtime": "nodejs12"
+}
